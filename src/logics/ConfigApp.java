@@ -5,10 +5,10 @@ public class ConfigApp {
     public static int type_user_session = -1;
     public static boolean isStatusDB_Connect = false;
     //-=-=-=-=-=-=-//
-    public static String dbHost = "176.117.191.36";
-    public static String dbUser = "SPF";
-    public static String dbPassword = "admin";
-    public static String dbName = "SPF";
+    public static String dbHost = "[HOST_TO_DB]";
+    public static String dbUser = "[DB_USER]";
+    public static String dbPassword = "[DB_PASSWORD]";
+    public static String dbName = "[DB_NAME]";
     //-=-=-=-=-=-=-//
     public static final String TABLE_USERS = "users";
     public static final String TABLE_SPARE_PARTS = "spare_parts";
