@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2A2E30;" stylesheets="@../res/WindowStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="567.0" layoutX="120.0" layoutY="169.0" nodeOrientation="INHERIT" opacity="0.2" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="166.0">
+         <image>
+            <Image url="@../res/icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="434.0" fitWidth="418.0" layoutX="216.0" layoutY="166.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="166.0">
+         <image>
+            <Image url="@../res/hello.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="190.0" layoutX="67.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../res/load.gif" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="365.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вітання" AnchorPane.bottomAnchor="524.181640625" AnchorPane.leftAnchor="344.3671875" AnchorPane.rightAnchor="353.923828125" AnchorPane.topAnchor="46.716796875">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="WAIT" />
+   </cursor>
+</AnchorPane>

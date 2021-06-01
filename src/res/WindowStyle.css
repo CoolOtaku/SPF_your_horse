@@ -1,0 +1,14 @@
+.scroll-bar:vertical {
+   -fx-padding: 0px;
+   -fx-scale-x: 0;
+   -fx-pref-width: 0;
+}
+.spinner .increment-arrow-button .increment-arrow, .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-body-color: #6B8799;
+}
+.spinner:focused, .spinner:contains-focus {
+  -fx-background-color: #181818;
+}

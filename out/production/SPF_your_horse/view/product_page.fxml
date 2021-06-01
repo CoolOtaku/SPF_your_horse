@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2A2E30;" stylesheets="@../res/WindowStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.controllers.ProductPage">
+   <children>
+      <ImageView fx:id="ImageItem" fitHeight="150.0" fitWidth="150.0" layoutX="25.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="282.5" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../res/none_image.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="172.0" layoutY="5.0" prefHeight="155.0" prefWidth="195.0" AnchorPane.bottomAnchor="235.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Text fx:id="NameItem" fill="WHITE" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="NameItem" wrappingWidth="195.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="DescriptionItem" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="DescriptionItem" wrappingWidth="195.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <Text fx:id="PriceItem" fill="WHITE" layoutX="51.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" underline="true" AnchorPane.bottomAnchor="224.8671875" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="556.2705078125" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="CountItem" fill="WHITE" layoutX="61.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Count" underline="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="40.0" endY="90.0" layoutX="346.0" layoutY="76.0" startX="40.0" startY="-52.0" stroke="WHITE" AnchorPane.bottomAnchor="234.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="285.5" AnchorPane.topAnchor="5.0" />
+      <Text fill="WHITE" layoutX="392.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Відгуки:" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="147.14111328125" AnchorPane.topAnchor="230.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <AnchorPane prefHeight="144.0" prefWidth="456.0" style="-fx-background-color: #2A2E30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Продає:" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="501.97509765625">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Line endX="130.0" startX="-100.0" stroke="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="285.5" AnchorPane.topAnchor="5.0" />
+            <Text fx:id="PUserName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="PUserName" wrappingWidth="116.74658203125" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="110.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="PUserImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="495.0">
+               <image>
+                  <Image url="@../res/none_image.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="NameItem1" fill="WHITE" layoutX="26.0" layoutY="120.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Електронна пошта:" wrappingWidth="116.74658060073853" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="110.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="MailUser" editable="false" prefHeight="79.0" prefWidth="120.0" promptText="Mail" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-text-fill: white;" stylesheets="@../res/TextArea.css" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="60.0" />
+            <Line endX="40.0" endY="150.0" fill="WHITE" layoutX="196.0" layoutY="-9.0" startX="40.0" startY="34.0" stroke="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="363.5" AnchorPane.topAnchor="15.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="ListReviews" minHeight="100.0" minWidth="242.0" prefHeight="323.0" prefWidth="360.0" stylesheets="@../res/TableStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+         <columns>
+            <TableColumn fx:id="ColumnAvatar" maxWidth="-1.0" minWidth="70.0" prefWidth="70.0" text="Аватар" />
+            <TableColumn fx:id="ColumnName" maxWidth="-1.0" minWidth="100.0" prefWidth="100.0" text="Ім'я" />
+            <TableColumn fx:id="ColumnText" maxWidth="1.7976931348623157E308" minWidth="185.0" prefWidth="-1.0" text="Текст" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <VBox layoutX="435.0" layoutY="18.0" prefHeight="200.0" prefWidth="150.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Button fx:id="ButtonBuy" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Купити" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ButtonAddReviews" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Добавити відгук" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ButtonEdit" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Редагувати" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ButtonDelete" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Видалити" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="ContainerSendReviews" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #181818; -fx-background-radius: 15;" visible="false" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <TextArea fx:id="SendReviewsText" promptText="Текст відгука" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-text-fill: white;" stylesheets="@../res/TextArea.css" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="ButtonReviewsCancel" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Відмінити" textFill="WHITE" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="175.0" />
+            <Button fx:id="ButtonSendReviews" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Надіслати" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="210.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

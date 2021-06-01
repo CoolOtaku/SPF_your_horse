@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2A2E30;" stylesheets="@../res/WindowStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.controllers.Add_Edit_SPF">
+   <children>
+      <ImageView fx:id="Item_Image" fitHeight="140.0" fitWidth="140.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="15.0">
+         <image>
+            <Image url="@../res/none_image.png" />
+         </image></ImageView>
+      <TextField fx:id="ItemName" layoutX="155.0" layoutY="28.0" prefHeight="27.0" promptText="Назва" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-background-color: #00000000; -fx-text-fill: white;" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="191.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Назва:" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="204.12109375" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="ItemDescription" layoutX="365.0" layoutY="35.0" prefHeight="142.0" prefWidth="230.0" promptText="Опис" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-text-fill: white;" stylesheets="@../res/TextArea.css" wrapText="true" AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Text fill="WHITE" layoutX="355.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Опис:" AnchorPane.leftAnchor="355.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="201.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ціна:" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="407.98046875" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ItemPrice" layoutX="160.0" layoutY="93.0" prefHeight="27.0" promptText="Ціна (грн)" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-background-color: #00000000; -fx-text-fill: white;" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="160.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кількість:" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ItemCount" layoutX="167.0" layoutY="155.0" prefHeight="32.0" prefWidth="190.0" promptText="Кількість" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-background-color: #00000000; -fx-text-fill: white;" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="145.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ButtonLookImage" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="203.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Виберіть фотографію" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="180.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/look.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="71.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фотографія:" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="453.8955078125" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="ButtonAdd" layoutX="482.0" layoutY="344.0" mnemonicParsing="false" prefHeight="26.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Добавити" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonCancel" layoutX="391.0" layoutY="355.0" mnemonicParsing="false" prefHeight="26.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Відмінити" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="130.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

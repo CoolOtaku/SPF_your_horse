@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #2A2E30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.controllers.Autor">
+   <children>
+      <ImageView fx:id="DevAvatar" fitHeight="120.0" fitWidth="120.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <image>
+            <Image url="@../res/autor_icon.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="10.0" layoutY="30.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Розробник" wrappingWidth="344.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="20.0" layoutY="40.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Нікнейм:" wrappingWidth="62.0" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Text>
+      <TextField editable="false" layoutX="202.0" layoutY="27.0" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #00000000; -fx-text-fill: #6B8799;" text="Cool_Otaku" AnchorPane.leftAnchor="195.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="140.0" layoutY="81.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ПІБ:" wrappingWidth="31.0" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font>
+      </Text>
+      <TextField editable="false" layoutX="171.0" layoutY="60.0" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: #00000000; -fx-text-fill: #6B8799;" text="Федорів Назарій Петрович" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ButtonInstagram" layoutX="408.0" layoutY="114.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00000000;" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="90.0">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/instagram_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonFacebook" layoutX="226.0" layoutY="96.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00000000;" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="90.0">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/facebook_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonTelegram" layoutX="236.0" layoutY="106.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00000000;" AnchorPane.leftAnchor="285.0" AnchorPane.topAnchor="90.0">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/telegram_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="350.0" layoutY="170.0" startX="-100.0" stroke="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Text fill="WHITE" layoutX="15.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Проект створений як курсовий проект в 2021 році. Час потрачений на проект: 2 місяці. Мова програмування яка застосовано для проекту: Java та бібліотека: JavaFx. Весь проект повністю на Українській мові. В проекті не передбачалася локалізація." wrappingWidth="450.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="ButtonGit" layoutX="246.0" layoutY="116.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00000000;" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="90.0">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/git_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
