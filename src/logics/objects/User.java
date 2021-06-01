@@ -102,8 +102,8 @@ public class User {
 
     }
     public static void SendMailMessage(String to, String subject, String text){
-        final String from ="spfyourhorse@gmail.com";
-        final  String password ="spfyourhorse12345";
+        final String from ="[PROJECT_MAIL]";
+        final  String password ="[PROJECT_PASSWORD_TO_MAIL]";
 
         Properties props = new Properties();
         props.setProperty("mail.transport.protocol", "smtp");
