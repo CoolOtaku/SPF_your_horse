@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2A2E30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.controllers.Shop">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="63.0" prefHeight="160.0" prefWidth="800.0" AnchorPane.bottomAnchor="440.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="ImageUser" fitHeight="100.0" fitWidth="100.0" layoutX="6.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="695.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../res/none_image.png" />
+               </image></ImageView>
+            <Text fx:id="NameView" fill="WHITE" layoutX="41.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="611.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Button fx:id="ButtonEditUser" layoutX="696.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Редагувати профіль" textFill="WHITE" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="ButtonAdminPanel" disable="true" mnemonicParsing="false" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Адмін панель " textFill="WHITE" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="15.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ButtonAddSPF" mnemonicParsing="false" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Добавити матеріал" textFill="WHITE" AnchorPane.rightAnchor="165.0" AnchorPane.topAnchor="15.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Text fill="WHITE" layoutX="152.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Електронна адреса:" wrappingWidth="250.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Головний тип користувача:" wrappingWidth="250.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="55.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="TypeUser" fill="#6b8799" strokeType="OUTSIDE" strokeWidth="0.0" text="type" wrappingWidth="250.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="MailUser" editable="false" layoutX="105.0" layoutY="25.0" prefHeight="31.0" prefWidth="250.0" style="-fx-background-color: #00000000; -fx-text-fill: #6B8799;" text="mail" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </TextField>
+            <Line endX="400.0" endY="90.0" startX="400.0" stroke="WHITE" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="439.0" AnchorPane.topAnchor="5.0" />
+            <Line endX="400.0" endY="40.0" startX="400.0" stroke="WHITE" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="106.0" />
+            <TextField fx:id="SearchText" layoutX="231.0" layoutY="114.0" prefHeight="25.0" prefWidth="160.0" promptText="Введіть текст для пошуку" style="-fx-border-color: #6B8799; -fx-border-width: 1; -fx-background-color: #00000000; -fx-text-fill: white;" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="114.0" />
+            <HBox prefHeight="38.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="107.0">
+               <children>
+                  <Button fx:id="ButtonOrders" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="38.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Замовлення" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="ButtonStatistics" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="38.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Статистика" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="ButtonExit" mnemonicParsing="false" prefHeight="38.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Вихід" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../res/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="SearchButton" layoutX="398.0" layoutY="104.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: #00000000;" AnchorPane.leftAnchor="385.0" AnchorPane.topAnchor="106.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/search_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="FilterButton" layoutX="408.0" layoutY="114.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: #00000000;" AnchorPane.leftAnchor="385.0" AnchorPane.topAnchor="55.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../res/filter_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="CountSPF" fill="WHITE" layoutX="443.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кількість знайденої продукції: 0" wrappingWidth="345.0" AnchorPane.leftAnchor="445.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="65.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="ListData" layoutX="300.0" layoutY="167.0" minHeight="400.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@../res/TableStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+        <columns>
+            <TableColumn fx:id="ColumnId" maxWidth="-1.0" minWidth="40.0" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="ColumnImage" maxWidth="-1.0" minWidth="140.0" prefWidth="140.0" text="Фото" />
+          <TableColumn fx:id="ColumnName" maxWidth="1.7976931348623157E308" minWidth="395.0" prefWidth="395.0" text="Назва" />
+            <TableColumn fx:id="ColumnPrice" maxWidth="-1.0" minWidth="150.0" prefWidth="150.0" text="Ціна (грн)" />
+            <TableColumn fx:id="ColumnActions" maxWidth="-1.0" minWidth="70.0" prefWidth="70.0" styleClass="action" text="Дія" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <AnchorPane fx:id="LoadBur" prefHeight="427.0" prefWidth="457.0" style="-fx-background-color: #2A2E30;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ProgressBar fx:id="LoadProgres" layoutX="300.0" layoutY="290.0" prefHeight="20.0" progress="0.0" stylesheets="@../res/ProgressStyle.css" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+            <Text fill="WHITE" layoutX="334.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Загрузка Даних" textAlignment="CENTER" AnchorPane.bottomAnchor="267.98046875" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="325.033203125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

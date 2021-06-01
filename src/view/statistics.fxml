@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #2A2E30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.controllers.Statistics">
+   <children>
+      <Text fill="WHITE" layoutX="10.0" layoutY="30.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика користувача" wrappingWidth="170.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Text>
+      <Line endX="450.0" layoutX="134.0" layoutY="42.0" startX="-100.0" stroke="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="30.0" />
+      <Text fx:id="StatisticsText1" fill="#6b8799" layoutX="20.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика 1" wrappingWidth="550.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="NameView" fill="WHITE" layoutX="207.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text fx:id="StatisticsText2" fill="WHITE" layoutX="25.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика 2" wrappingWidth="550.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="StatisticsText3" fill="#6b8799" layoutX="25.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика 3" wrappingWidth="550.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="StatisticsText4" fill="WHITE" layoutX="20.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика 4" wrappingWidth="550.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="StatisticsText5" fill="#6b8799" layoutX="35.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика 5" wrappingWidth="550.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="StatisticsText6" fill="WHITE" layoutX="20.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статистика 6" wrappingWidth="550.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

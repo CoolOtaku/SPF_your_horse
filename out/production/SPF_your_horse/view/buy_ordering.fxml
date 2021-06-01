@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2A2E30;" stylesheets="@../res/WindowStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.controllers.BuyOrdering">
+   <children>
+      <Text fill="WHITE" layoutY="20.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Оформлення замовлення" wrappingWidth="195.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Text>
+      <Line endX="415.0" layoutX="285.0" layoutY="23.0" startX="-100.0" stroke="WHITE" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="25.0" />
+      <Text fx:id="PriceItem" fill="WHITE" layoutX="61.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" underline="true" wrappingWidth="250.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="55.0">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="AllPriceItem" fill="WHITE" layoutX="275.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" underline="true" wrappingWidth="250.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="55.0">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введіть кількість:" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Spinner fx:id="SpinnerCount" layoutX="172.0" layoutY="77.0" prefHeight="25.0" prefWidth="87.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="80.0" />
+      <Text fx:id="DescriptionItem" fill="WHITE" layoutX="40.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Немає" wrappingWidth="500.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="115.0" />
+      <AnchorPane layoutX="138.0" layoutY="233.0" prefHeight="140.0" prefWidth="220.0" style="-fx-background-color: #2A2E30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Продавець:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="NameUserSeller" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="NameUserSeller" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="MailUserSeller" editable="false" style="-fx-background-color: #00000000; -fx-text-fill: #6B8799;" text="Mail" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="ImageUserSeller" fitHeight="70.0" fitWidth="70.0" layoutX="10.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+               <image>
+                  <Image url="@../res/none_image.png" />
+               </image>
+            </ImageView>
+            <Line endX="160.0" endY="26.0" startX="160.0" startY="130.0" stroke="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="140.0" prefWidth="220.0" style="-fx-background-color: #2A2E30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="220.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Покупець:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="NameUserShopper" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="NameUserShopper" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="MailUserShopper" editable="false" style="-fx-background-color: #00000000; -fx-text-fill: #6B8799;" text="Mail" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="ImageUserShopper" fitHeight="70.0" fitWidth="70.0" layoutX="17.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+               <image>
+                  <Image url="@../res/none_image.png" />
+               </image>
+            </ImageView>
+            <Line endX="160.0" endY="26.0" startX="160.0" startY="130.0" stroke="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="ButtonCancel" layoutX="478.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Відмінити" textFill="WHITE" underline="true" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="5.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonDraw_Up" layoutX="456.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #6B8799; -fx-background-radius: 10;" text="Оформити" textFill="WHITE" underline="true" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="5.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="NameItem" fill="WHITE" layoutX="87.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="534.173828125" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="MaxCount" fill="WHITE" layoutX="279.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MaxCount" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="265.501953125" AnchorPane.topAnchor="85.0" />
+   </children>
+</AnchorPane>
