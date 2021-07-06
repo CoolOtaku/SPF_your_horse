@@ -9,14 +9,14 @@ This is course-work created on JavaFx.
 ### Screenshots of the application:
 
 <p>
-  <img src="screens/sc1.png" height="500px"/>
-  <img src="screens/sc2.png" height="500px"/>
-  <img src="screens/sc3.png" height="500px"/>
-  <img src="screens/sc4.png" height="500px"/>
-  <img src="screens/sc5.png" height="500px"/>
-  <img src="screens/sc6.png" height="500px"/>
-  <img src="screens/sc7.png" height="500px"/>
-  <img src="screens/sc8.png" height="500px"/>
+  <img src="screens/sc1.jpg" height="500px"/>
+  <img src="screens/sc2.jpg" height="500px"/>
+  <img src="screens/sc3.jpg" height="500px"/>
+  <img src="screens/sc4.jpg" height="500px"/>
+  <img src="screens/sc5.jpg" height="500px"/>
+  <img src="screens/sc6.jpg" height="500px"/>
+  <img src="screens/sc7.jpg" height="500px"/>
+  <img src="screens/sc8.jpg" height="500px"/>
 </p>
 
 ## UA
@@ -26,14 +26,14 @@ This is course-work created on JavaFx.
 ### Скріншоти додатка:
 
 <p>
-  <img src="screens/sc1.png" height="500px"/>
-  <img src="screens/sc2.png" height="500px"/>
-  <img src="screens/sc3.png" height="500px"/>
-  <img src="screens/sc4.png" height="500px"/>
-  <img src="screens/sc5.png" height="500px"/>
-  <img src="screens/sc6.png" height="500px"/>
-  <img src="screens/sc7.png" height="500px"/>
-  <img src="screens/sc8.png" height="500px"/>
+  <img src="screens/sc1.jpg" height="500px"/>
+  <img src="screens/sc2.jpg" height="500px"/>
+  <img src="screens/sc3.jpg" height="500px"/>
+  <img src="screens/sc4.jpg" height="500px"/>
+  <img src="screens/sc5.jpg" height="500px"/>
+  <img src="screens/sc6.jpg" height="500px"/>
+  <img src="screens/sc7.jpg" height="500px"/>
+  <img src="screens/sc8.jpg" height="500px"/>
 </p>
 
 ## Others
