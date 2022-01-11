@@ -1,6 +1,6 @@
 # SPF_your_horse
 
-<p align="center"><img width="128" height="128" src="src/res/icon.png" /></p>
+<p align="center"><img height="128" src="src/res/icon.png" /></p>
 
 ## EN
 
