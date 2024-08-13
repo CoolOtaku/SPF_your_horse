@@ -4,11 +4,15 @@
 ## Description
 <b>EN:</b>
 
-This is course-work created on **JavaFx**. Online store selling auto parts.
+This is course-work created on [**JavaFX**](https://openjfx.io).
+
+Online store selling auto parts. Developed as a Desktop program running on **JVM**.
 
 <b>UA:</b>
 
-Це курсова робота, створена на **JavaFx**. Інтернет магазин з продажу автозапчастин.
+Це курсова робота, створена на [**JavaFX**](https://openjfx.io).
+
+Інтернет магазин з продажу автозапчастин. Розроблено у вигляді Desktop програми, працююча на **JVM**.
 
 #
 ## Screenshots
