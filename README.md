@@ -26,7 +26,8 @@ This is course-work created on **JavaFx**. Online store selling auto parts.
 #
 ## Technologies used
 <b>EN:</b>
-- Using the **JavaFX** library to create a graphical user interface
+- Using the [**JavaFX**](https://openjfx.io) library to create a graphical user interface
+- Using an interface markup program [**Scene Builder**](https://gluonhq.com/products/scene-builder/)
 - Using the **MySQL** database (mysql-connector-java-8.0.23)
 - Work with **JSON** format (com.googlecode.json-simple:json-simple:1.1.1)
 - Sending messages from the program to the user by e-mail (com.sun.mail:javax.mail:1.6.0)
@@ -35,7 +36,8 @@ This is course-work created on **JavaFx**. Online store selling auto parts.
 - Internal authorization system
 
 <b>UA:</b>
-- Використання бібліотеки **JavaFX** для створення графічного користувацького інтерфейсу
+- Використання бібліотеки [**JavaFX**](https://openjfx.io) для створення графічного користувацького інтерфейсу
+- Використання програми для розмітки інтерфейсу [**Scene Builder**](https://gluonhq.com/products/scene-builder/)
 - Використання бази даних **MySQL** (mysql-connector-java-8.0.23)
 - Робота з форматом **JSON** (com.googlecode.json-simple:json-simple:1.1.1)
 - Відправка повідомлень від програми до користувача електронною поштою (com.sun.mail:javax.mail:1.6.0)
